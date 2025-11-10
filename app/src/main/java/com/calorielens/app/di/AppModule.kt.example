@@ -1,0 +1,50 @@
+package com.calorielens.app.di
+
+import android.content.Context
+import androidx.room.Room
+import com.calorielens.app.data.database.CalorieLensDatabase
+import com.calorielens.app.data.remote.GeminiApiService
+import com.calorielens.app.data.repository.MealRepository
+import com.calorielens.app.data.repository.UserRepository
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
+object AppModule {
+    private const val BASE_URL = "https://generativelanguage.googleapis.com/"
+    
+    // IMPORTANT: Replace this with your actual Gemini API key
+    // Get your API key from: https://makersuite.google.com/app/apikey
+    private const val API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+
+    fun provideDatabase(context: Context): CalorieLensDatabase {
+        return Room.databaseBuilder(
+            context,
+            CalorieLensDatabase::class.java,
+            "calorie_lens_database"
+        ).build()
+    }
+
+    fun provideGeminiApiService(): GeminiApiService {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        return retrofit.create(GeminiApiService::class.java)
+    }
+
+    fun provideUserRepository(database: CalorieLensDatabase): UserRepository {
+        return UserRepository(database.userDao())
+    }
+
+    fun provideMealRepository(
+        database: CalorieLensDatabase,
+        apiService: GeminiApiService
+    ): MealRepository {
+        return MealRepository(
+            database.mealDao(),
+            apiService,
+            API_KEY
+        )
+    }
+}
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calorie Lens</string>
+    
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to Calorie Lens</string>
+    <string name="welcome_subtitle">Your AI Nutrition Coach</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_privacy_title">Welcome to Calorie Lens</string>
+    <string name="welcome_privacy_description">Start tracking your nutrition instantly and privately. No email or personal information required.</string>
+    <string name="create_anonymous_account">Create Anonymous Account</string>
+    
+    <!-- Goal Selection -->
+    <string name="goal_selection_title">What is your primary goal?</string>
+    <string name="goal_lose_weight">Lose Weight</string>
+    <string name="goal_lose_weight_desc">Set a calorie deficit to sustainably reduce body weight.</string>
+    <string name="goal_gain_muscle">Gain Muscle</string>
+    <string name="goal_gain_muscle_desc">Focus on a protein-rich diet and a calorie surplus to build lean mass.</string>
+    <string name="goal_maintain_weight">Maintain Weight</string>
+    <string name="goal_maintain_weight_desc">Learn your maintenance calories to stay at your current weight.</string>
+    <string name="goal_improve_energy">Improve Energy</string>
+    <string name="goal_improve_energy_desc">Track macronutrients to optimize your daily energy levels.</string>
+    <string name="continue">Continue</string>
+    
+    <!-- Dashboard -->
+    <string name="good_morning">Good Morning, %1$s</string>
+    <string name="calories">Calories</string>
+    <string name="protein">Protein</string>
+    <string name="carbs">Carbohydrates</string>
+    <string name="fat">Fat</string>
+    <string name="premium_insights">Premium Insights</string>
+    <string name="upgrade">UPGRADE</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="micronutrients">Micronutrients</string>
+    <string name="recent_entries">Recent Entries</string>
+    
+    <!-- Voice Logging -->
+    <string name="voice_logging_title">Tap the mic and say what you ate.</string>
+    <string name="pause">Pause</string>
+    <string name="done">Done</string>
+    
+    <!-- Camera -->
+    <string name="camera_position_meal">Position your meal inside the lens.</string>
+    
+    <!-- Meal Analysis -->
+    <string name="meal_analysis">Meal Analysis</string>
+    <string name="total_calories">Total Calories</string>
+    <string name="macronutrient_breakdown">Macronutrient Breakdown</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="correct">Correct</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_scanner">Scanner</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_social">Social</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Permissions -->
+    <string name="permission_camera_title">Camera Permission Required</string>
+    <string name="permission_camera_message">Calorie Lens needs camera access to scan your meals.</string>
+    <string name="permission_microphone_title">Microphone Permission Required</string>
+    <string name="permission_microphone_message">Calorie Lens needs microphone access for voice logging.</string>
+    <string name="permission_grant">Grant Permission</string>
+    <string name="permission_denied">Permission Denied</string>
+    
+    <!-- Errors -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_unknown">An unexpected error occurred.</string>
+    <string name="error_camera">Failed to access camera.</string>
+    <string name="error_voice">Failed to record audio.</string>
+    
+    <!-- Accessibility -->
+    <string name="content_desc_camera_button">Open camera to scan meal</string>
+    <string name="content_desc_voice_button">Start voice logging</string>
+    <string name="content_desc_meal_image">Meal image</string>
+</resources>
